@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+.detail-container {
+  display: flex; /* Flexbox kullanımı */
+  justify-content: space-between; /* Bileşenler arasında boşluk bırakma */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.detail-content {
+  flex: 1; /* Detay içeriği genişler */
+  margin-right: 10px; /* Sağ boşluk (isteğe bağlı) */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sepet-container {
+  width: 300px; /* Sepet genişliği (isteğe bağlı) */
+  
+  padding: 10px; /* İsteğe bağlı: Sepet iç boşluk */
+  border-left: 1px solid #ddd; /* İsteğe bağlı: Sepet sol kenar */
+}
+.detayresim{
+  width: 600px;
+   height: 500px;
+}
+.imgtitle{
+  margin-top:80px;
+  margin-left: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.detail-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Aradaki boşluk */
+}
+
+.detayresim {
+  max-width: 60%;
+  height:600px;
+  margin-left:60px;
+}
+
+.detail-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex: 1;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.imgtitle {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top:150px;
+}
+
+.size-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.size-button {
+  padding: 10px;
+  background-color: #4caf50;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.price-container {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button.is-small {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-top:80px;
+}
+.sepet{
+  border-radius:2px;
+  width:200px;
+  margin-left:90px;
+ 
+  
+}
+.topluseper{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom:30px;
+ border-radius: 20px; border: 2px solid black; /* Kutu sınırını çizer */
+ padding: 20px; /* İçerideki boşluk */
+ margin: 20px; /* Dışarıdaki boşluk */
+ border-radius: 10px; /* Köşeleri yuvarlatır */
+ width:800px;
+ height: 200px;
+  
+}
+.sepresim img{
+  height:150px;
+}
+.ana {
+  display: flex;
+  align-items: center;
+}
+
+.azaltart, .adet {
+  border: 1px solid #ccc; /* Buton kenarı */
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 4px; /* Köşeleri yuvarlatır */
+  background-color: white;
+}
+
+.azaltart:hover, .adet:hover {
+  background-color: #f0f0f0; /* Hover rengi */
+}
+.sepetodeme {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+ 
+}
+
+.sepetodeme > div {
+  margin: 5px; /* Her iki bileşen arasında boşluk bırakır */
+
 }
